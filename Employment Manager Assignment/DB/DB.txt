@@ -1,0 +1,18 @@
+CREATE DATABASE employment_manager;
+
+USE employment_manager;
+
+CREATE TABLE employment(
+employment_id int NOT NULL AUTO_INCREMENT,
+company varchar(100) NOT NULL,
+city varchar(50) NOT NULL,
+country varchar(50) NOT NULL,
+title varchar(200) NOT NULL,
+peried_month varchar(50) NOT NULL,
+peried_year varchar(50) NOT NULL,
+through_month varchar(50) NOT NULL,
+through_year varchar(50) NOT NULL,
+currently_work varchar(50) NOT NULL,
+description varchar(1000) NOT NULL,
+CONSTRAINT PRIMARY KEY(employment_id)
+) ENGINE=INNODB;
